@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Boldonse&display=swap');
+
+.height-25 {
+    height: 25vh;
+}
+
+.ff-anton {
+    font-family: 'Anton', sans-serif;
+    font-size: 4rem;
+}
+
+.f-invert {
+    filter: invert(1);
+}
