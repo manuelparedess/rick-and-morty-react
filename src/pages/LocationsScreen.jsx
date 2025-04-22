@@ -6,7 +6,6 @@ import Location from '../components/ux/Location';
 const LocationsScreen = () => {
     const { locations, info } = useLoaderData();
     const { state } = useNavigation();
-    console.log(info);
 
     return (
         <div className='container mt-3'>
@@ -21,7 +20,6 @@ const LocationsScreen = () => {
                     )
                     : (
                         <>
-                            {/* IMPORTANTE: INCLUIR NAVIGATION MANDAR PAGE POR PARAMETROS */}
                             <Navigation info={info} tab={'locations'} />
                             <div className="row d-flex justify-content-center">
                                 {
