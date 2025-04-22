@@ -1,0 +1,26 @@
+import React from 'react'
+import { Link, useParams } from 'react-router-dom';
+
+const Navigation = ({ info }) => {
+    const { page } = useParams();
+
+    return (
+        <div className='d-flex'>
+                {
+                    (info.prev == null) ? '' : (<Link className='btn btn-outline-danger d-flex align-items-center rounded-circle' to={`/characters/${parseInt(page) - 1}`}>{'<'}</Link>)
+                }
+                <div className="btn-group mx-auto" role="group" aria-label="Basic example">
+                    <Link className="btn btn-primary" to={'/characters/1'}>1</Link>
+                    <Link className="btn btn-primary" to={'/characters/2'}>2</Link>
+                    <Link className="btn btn-primary" to={'/characters/3'}>3</Link>
+                    <p className="btn btn-primary disabled m-0 px-3 py-0">...</p>
+                    <Link className="btn btn-primary" to={`/characters/${info.pages}`}>{`${info.pages}`}</Link>
+                </div>
+                {
+                    (info.next == null) ? '' : (<Link className='btn btn-outline-success d-flex align-items-center rounded-circle' to={`/characters/${parseInt(page) + 1}`}>{'>'}</Link>)
+                }
+            </div>
+    )
+}
+
+export default Navigation
