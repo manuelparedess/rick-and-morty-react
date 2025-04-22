@@ -10,7 +10,7 @@ const NavBar = () => {
                 <Link to={'/'} className='d-flex justify-content-center align-items-center height-25'><img className='object-fit-contain w-max f-invert h-25' src={HOME} /></Link>
                 <div className="list-group list-group-flush me-xl-4">
                     <Link to={'/characters/1'} className="list-group-item bg-dark text-light">Characters</Link>
-                    <Link to={'/locations'} className="list-group-item bg-dark text-light">Locations</Link>
+                    <Link to={'/locations/1'} className="list-group-item bg-dark text-light">Locations</Link>
                     <Link to={'/episodes'} className="list-group-item bg-dark text-light">Episodes</Link>
                 </div>
             </div>

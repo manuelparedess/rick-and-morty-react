@@ -21,7 +21,7 @@ const CharactersScreen = () => {
                     : (
                         <>
                             {/* IMPORTANTE: INCLUIR NAVIGATION MANDAR PAGE POR PARAMETROS */}
-                            <Navigation info={info} />
+                            <Navigation info={info} tab={'characters'} />
                             <div className="row d-flex justify-content-center">
                                 {
                                     characters.map((item) => <Character data={item} key={item.id} />)
