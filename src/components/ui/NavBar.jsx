@@ -11,7 +11,7 @@ const NavBar = () => {
                 <div className="list-group list-group-flush me-xl-4">
                     <Link to={'/characters/1'} className="list-group-item bg-dark text-light">Characters</Link>
                     <Link to={'/locations/1'} className="list-group-item bg-dark text-light">Locations</Link>
-                    <Link to={'/episodes'} className="list-group-item bg-dark text-light">Episodes</Link>
+                    <Link to={'/episodes/1'} className="list-group-item bg-dark text-light">Episodes</Link>
                 </div>
             </div>
             <div className='col-9 d-flex align-items-center gap-3 height-25 p-0'>

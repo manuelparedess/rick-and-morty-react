@@ -7,6 +7,7 @@ import Layout from "../layout/Layout";
 import NotFound from "../pages/NotFound";
 import { getCharacters } from "../helpers/getCharacters";
 import { getLocations } from "../helpers/getLocations";
+import { getEpisodes } from "../helpers/getEpisodes";
 
 export const router = createBrowserRouter([
     {
@@ -24,8 +25,9 @@ export const router = createBrowserRouter([
                 loader: getCharacters
             },
             {
-                path: '/episodes',
+                path: '/episodes/:page',
                 element: <EpisodesScreen />,
+                loader: getEpisodes
             },
             {
                 path: '/locations/:page',
