@@ -1,12 +1,56 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 📝 Rick and Morty React App
 
-Currently, two official plugins are available:
+This is a React-based web application that allows users to explore data from the **Rick and Morty API**, including characters, locations, and episodes from the show.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+├── assets/
+│   ├── background.png
+│   ├── home.png
+│   └── logo.png
+├── components/
+│   ├── ui/
+│   │   ├── Footer.jsx
+│   │   ├── NavBar.jsx
+│   │   └── Navigation.jsx
+│   └── ux/
+│   │   ├── Character.jsx
+│   │   ├── Episode.jsx
+│   │   └── Location.jsx
+├── helpers/
+│   ├── getCharacters.js
+│   ├── getEpisodes.js
+│   └── getLocations.js
+├── layout/
+│   └── Layout.jsx
+├── pages/
+│   ├── CharactersScreen.jsx
+│   ├── EpisodesScreen.jsx
+│   ├── LocationsScreen.jsx
+│   ├── MainScreen.jsx
+│   └── NotFound.jsx
+├── router/
+│   └── router.jsx
+├── styles/
+│   └── index.css
+├── main.jsx
+```
+
+---
+
+## ✨ Features
+
+- 🔍 Pagination for characters, locations, and episodes.
+- 📱 Fully responsive design using Bootstrap.
+- 📦 Data fetched from the [Rick and Morty API](https://rickandmortyapi.com/).
+- 🌐 Client-side routing with React Router.
+- ❌ 404 Not Found page for invalid routes.
+- 🖼️ Clean UI with reusable components.
+
+## 📚 Course
+FullStack developer course in [DevSchool Academia](https://devschool.com.ar/)
