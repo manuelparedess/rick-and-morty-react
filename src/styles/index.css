@@ -12,3 +12,36 @@
 .f-invert {
     filter: invert(1);
 }
+
+.image-size {
+    height: 80%;
+}
+
+.offcanvas-img {
+    width: 7.5vw;
+}
+
+@media (max-width: 768px) {
+
+    .ff-anton {
+        font-size: 3.5rem;
+    }
+
+    .image-size {
+        height: 65%;
+    }
+}
+
+@media (max-width: 576px) {
+    .ff-anton {
+        font-size: 2.5rem;
+    }
+
+    .image-size {
+        height: 60%;
+    }
+
+    .height-25 {
+        height: 20vh;
+    }
+}
