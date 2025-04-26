@@ -12,7 +12,7 @@ const Location = ({ data }) => {
                 </div>
                 <div className="card-body d-flex flex-column justify-content-between">
                     <p className="card-text fst-italic">{type}</p>
-                    <p className="card-text fw-bold" id="status">{dimension}</p>
+                    <p className={`card-text ${(dimension === 'unknown') ? 'text-secondary' : ''} fw-bold`} id="status">{dimension}</p>
                 </div>
             </div>
         </div>

@@ -10,7 +10,7 @@ const Episode = ({ data }) => {
     if (match) {
         const season = parseInt(match[1], 10);
         const episode = parseInt(match[2], 10);
-        dataEpisode = `Temporada ${season}, Episodio ${episode}`;
+        dataEpisode = `Season ${season}, Episode ${episode}`;
     }
 
     return (
@@ -22,8 +22,8 @@ const Episode = ({ data }) => {
                 <div className="card-body d-flex flex-column justify-content-between">
                     <p className="card-text fst-italic">{dataEpisode}</p>
                     <div className="d-flex flex-column justify-content-end">
-                        <p className="card-text m-0">Fecha de emision:</p>
-                        <p className="card-text fw-bold" id="status">{air_date}</p>
+                        <p className="card-text m-0">Air date:</p>
+                        <p className="card-text text-secondary fw-bold" id="status">{air_date}</p>
                     </div>
                 </div>
             </div>
