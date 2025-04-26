@@ -21,6 +21,10 @@
     width: 7.5vw;
 }
 
+.bg-image {
+    width: 75%;
+}
+
 @media (max-width: 768px) {
 
     .ff-anton {

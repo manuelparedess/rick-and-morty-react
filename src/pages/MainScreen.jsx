@@ -5,8 +5,8 @@ import BACKGROUND from '../assets/background.png';
 
 const MainScreen = () => {
     return (
-        <div className="container my-3 text-center">
-            <img className='mb-3' src={BACKGROUND} alt="" />
+        <div className="container my-5 text-center">
+            <img className='mb-3 bg-image' src={BACKGROUND} alt="" />
 
             <h1 className="mb-4">Welcome to the Rick and Morty Universe</h1>
             <p className="lead mb-5">
